@@ -1,16 +1,18 @@
 <!doctype html>
 <html>
 <head>
-  <script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
-
+<script src="http://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
 <script>
 function reveal() {
   $('#more-recipes').slideDown();
+  $('.bonus').hide();
 }
+
+$('.bonus').on('click', reveal);
+
 function hideagain() {
   $('#more-recipes').hide();
 }
-
 
 </script>
 <link rel="stylesheet" href="final-exam.css" />
@@ -36,6 +38,8 @@ function hideagain() {
 
       <h3><a href="http://www.epicurious.com/recipes/food/views/cinnamon-bun-bundt-cake-51196640">Cinnamon Bun Bundt Cake</a></h3>
       <p>Of course, any leftovers of this cake are a welcome treat at breakfast the next morning.</p>
+
+      <p class="bonus">More recipes</p>
 
       <div id="more-recipes" style="display:none;">
         <h3><a href="http://www.epicurious.com/recipes/food/views/cranberry-spice-cake-368253">Cranberry Spice Cake</a></h3>

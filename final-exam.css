@@ -63,3 +63,8 @@ h1{
   margin-bottom: 35px;
   padding-bottom: 20px;
 }
+
+.bonus{
+  padding: 5px;
+  background-color: maroon;
+}
