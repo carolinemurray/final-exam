@@ -1,0 +1,38 @@
+*{
+  box-sizing: border-box;
+}
+
+@media(min-width: 500px) {
+  .left-column{
+    width: 67%;
+  }
+
+  .right-column{
+    width: 33%;
+  }
+}
+
+@media(min-width: 650px) {
+  .left-column{
+    float: left;
+  }
+
+  .right-column{
+    float: left;
+  }
+}
+
+.container{
+  max-width: 700px;
+  margin: 0 auto;
+  background: white;
+  overflow: auto;
+}
+
+body{
+  background: gray;
+}
+
+img{
+  max-width: 100%;
+}
